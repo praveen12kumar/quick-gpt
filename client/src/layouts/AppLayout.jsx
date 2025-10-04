@@ -6,7 +6,7 @@ import Sidebar from '../components/molecules/Sidebar';
 const AppLayout = () => {
   return (
     <div className="flex h-screen w-screen">
-      <aside className="w-64 shrink-0 border-r">
+      <aside className="">
         <Sidebar />
       </aside>
 

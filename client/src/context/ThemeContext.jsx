@@ -15,6 +15,7 @@ export const ThemeContextProvider = ({children})=>{
             document.documentElement.classList.remove('dark');
             localStorage.setItem('theme', 'light');
         }
+        localStorage.setItem('theme', theme);
     },[theme]);
 
 
