@@ -1,10 +1,18 @@
-import { createContext } from 'react';
+import { createContext, useEffect } from 'react';
 import { useState } from 'react';
 const AuthContext = createContext();
-
+import { dummyUserData } from '../assets/assets';
 
 export const AuthContextProvider = ({children})=>{
-    const [user, setUser] = useState('hello');
+    const [user, setUser] = useState(null);
+
+    const fetchUser = async()=>{
+        setUser(dummyUserData);
+    };
+
+    useEffect(()=>{
+        fetchUser();
+    },[]);
     
     
     return (
