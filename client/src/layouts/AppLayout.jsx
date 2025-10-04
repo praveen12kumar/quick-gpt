@@ -1,6 +1,7 @@
 
-import Sidebar from '../components/molecules/Sidebar';
 import { Outlet } from 'react-router-dom';
+
+import Sidebar from '../components/molecules/Sidebar';
 
 const AppLayout = () => {
   return (
